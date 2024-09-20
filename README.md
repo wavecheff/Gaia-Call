@@ -1,87 +1,66 @@
-```markdown
-# GAIA CALL
+# 🌍 GAIA CALL 🌍
 
-**GAIA CALL** es una herramienta enfocada en el envío masivo de mensajes SMS y llamadas, diseñada para simular un ataque de denegación de servicio (DoS) a través de mensajes. Este proyecto se basa en la estructura de Quack Toolkit, pero optimizado para trabajar en España, con una capacidad de envío entre 50 a 100 SMS por ataque.
+**GAIA CALL** es una herramienta de seguridad diseñada para enviar mensajes SMS y realizar llamadas de manera masiva, simulando ataques de denegación de servicio (DoS) a través de mensajes o llamadas. Inspirado en Quack Toolkit, está optimizado para operar en España y es fácil de usar desde terminales macOS.
 
-## Características
+## 🛠 Características
 
 - Envío masivo de SMS (50-100 por ataque).
-- Soporte para llamadas automáticas con mensajes predefinidos.
-- Optimizado para funcionar sin registro en proveedores externos (ej. Twilio).
-- Herramienta ligera y fácil de usar desde la terminal de macOS.
+- Llamadas automáticas con mensajes predefinidos.
+- Sin necesidad de proveedores como Twilio.
+- Fácil uso desde la terminal.
 
-## Instalación
+## 🚀 Instalación
 
 ### Requisitos
 
 - **Python 3.8 o superior**
-- Bibliotecas necesarias (instaladas a través de `pip`):
-    - `requests`
+- Librería `requests`
 
-### Pasos de instalación
+### Pasos
 
-1. Clona este repositorio:
+1. Clona el repositorio:
 
- 
-    git clone https://github.com/wavecheff/Gaia-Call.git
-   
+   ```bash
+   git clone https://github.com/wavecheff/Gaia-Call.git
+   ```
 
-2. Navega al directorio del proyecto:
+2. Navega al directorio:
 
-    ```bash
-    cd Gaia-Call
-    ```
+   ```bash
+   cd Gaia-Call
+   ```
 
-3. Instala las dependencias necesarias:
+3. Instala las dependencias:
 
-   
-    pip install -r requirements.txt
-   
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Uso
+## 💻 Uso
 
-Para ejecutar **GAIA CALL** y enviar SMS, usa el siguiente comando en la terminal:
+Para enviar SMS o realizar llamadas masivas, utiliza el siguiente comando:
 
+### Enviar SMS
 
+```bash
 python3 gaia_call.py --target <número_destino> --message "Mensaje a enviar" --count 50
+```
 
+### Realizar una llamada
 
-- `--target`: Número de teléfono de destino en formato internacional (+34 para España).
-- `--message`: El mensaje que deseas enviar.
-- `--count`: Número de mensajes SMS a enviar.
+```bash
+python3 gaia_call.py --target <número_destino> --message "Mensaje de llamada"
+```
 
 ### Ejemplo
 
-
-python3 gaia_call.py --target +34612345678 --message "Hola, este es un mensaje de prueba" --count 50
-
-## Contribuciones
-
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama con tu mejora o corrección:
-
-    
-    git checkout -b mi-nueva-rama
-    
-
-3. Realiza tus cambios y haz commit:
-
-    
-    git commit -m "Descripción de los cambios"
-   
-
-4. Envía tu rama al repositorio remoto:
-
-    
-    git push origin mi-nueva-rama
-   
-
-5. Crea una Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes ver más detalles en el archivo `LICENSE`.
-
+```bash
+python3 gaia_call.py --target +34612345678 --message "Prueba" --count 50
 ```
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
+---
+
